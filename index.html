@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript buoi 6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
+
 <body>
-    
+<!-- BAI TAP 1  -->
+<section class="container w-50 mx-auto my-5">
+    <div class="card">
+        <div class="card-header text-center">
+            <h3>Bài tập 1: Tìm số nguyên dương nhỏ nhất</h3>
+        </div>
+
+        <div class="card-body bg-info pl-2 m-4" id="soNhoNhat" style="display: none;">
+        </div>
+
+        <div class="d-flex justify-content-center mb-5">
+            <button onclick="timSoNhoNhat()" class="btn btn-primary mt-4">Kết quả</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- BAI TAP 2  -->
+<section class="container w-50 mx-auto my-5">
+    <div class="card">
+        <div class="card-header text-center">
+            <h3>Bài tập 2: Tính tổng</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group mt-4">
+                <input type="text" id="numberx" class="form-control" placeholder="Nhập số x">
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="form-group mb-3">
+                <input type="text" id="numbern" class="form-control" placeholder="Nhập số n">
+            </div>
+        </div>
+
+        <div class="card-body bg-success pl-2 m-4" id="hienThi" style="display: none;">
+        </div>
+
+        <div class="d-flex justify-content-center mb-5">
+            <button onclick="tinhTong()" class="btn btn-primary">Tính tổng</button>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- BAI TAP 3      -->
+    <section class="container w-50 mx-auto my-5">
+        <div class="card">
+            <div class="card-header text-center">
+                <h3>Bài tập 3: Tính giai thừa</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group mb-3">
+                    <label>Nhập vào n</label> <br>
+                    <input type="text" id="number3" class="form-control">
+                </div>
+            </div>
+
+            <div class="card-body bg-secondary pl-2 m-4" id="divGiaiThua" style="display: none;">
+            </div>
+
+            <div class="d-flex justify-content-center mb-5">
+                <button onclick="tinhGiaiThua()" class="btn btn-primary">Kết quả</button>
+            </div>
+
+        </div>
+    </section>
+
+<!-- BAI TAP 4      -->
+<section class="container w-50 mx-auto my-5">
+    <div class="card">
+        <div class="card-header text-center">
+            <h3>Bài tập 4 </h3>
+        </div>
+
+        <div class="d-flex justify-content-center mb-3">
+            <button onclick="change_background()" class="btn btn-primary mt-4">Change Background</button>
+        </div>
+
+        <div id="content" style="display: none;" class="m-4">
+            <div class="divContent">Div lẻ 1</div>
+            <div class="divContent">Div chẵn 2</div>
+            <div class="divContent">Div lẻ 3</div>
+            <div class="divContent">Div chẵn 4</div>
+            <div class="divContent">Div lẻ 5</div>
+            <div class="divContent">Div chẵn 6</div>
+            <div class="divContent">Div lẻ 7</div>
+            <div class="divContent">Div chẵn 8</div>
+            <div class="divContent">Div lẻ 9</div>
+            <div class="divContent">Div chẵn 10</div>
+        </div>
+    </div>
+</section>
 
 
     <script src="./js/bai1.js"></script>
     <script src="./js/bai2.js"></script>
+    <script src="./js/bai3.js"></script>
+    <script src="./js/bai4.js"></script>
 </body>
+
 </html>
