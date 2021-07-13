@@ -9,5 +9,5 @@ function timSoNhoNhat() {
 
     var soNhoNhat = document.getElementById("soNhoNhat");
     soNhoNhat.style.display = "block";
-    soNhoNhat.innerHTML = n
+    soNhoNhat.innerHTML = n;
 }   
